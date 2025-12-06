@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background gradient for the Dashboard */
+.dashboard-container {
+  min-height: 100vh;
+  padding: 2rem;
+  /* Deep dark gradient */
+  background: radial-gradient(circle at 50% 0%, #1a202c 0%, #000000 80%);
+  position: relative;
+}
+
+/* Glassmorphism Panel (The see-through boxes) */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Input Styling Override */
+.custom-input {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: 'Inter', sans-serif;
+  transition: 0.3s;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #00E0FF;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+}
