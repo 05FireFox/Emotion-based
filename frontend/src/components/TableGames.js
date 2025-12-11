@@ -16,27 +16,31 @@ function TableGames(props) {
       <Table stickyHeader aria-label="recommendation table">
         <TableHead>
           <TableRow>
+            {/* Updated Header: Game Title on the left */}
             <TableCell>Game Title</TableCell>
-            <TableCell align="right">Release Date</TableCell>
+            {/* Updated Header: Game ID on the right */}
+            <TableCell align="right">Game ID</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {tableData.map((row, index) => (
             <TableRow key={index} hover sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
               <TableCell component="th" scope="row">
+                {/* Column 1: Displaying the Game Title with the Link */}
                 <Link 
-                  href={`https://store.steampowered.com/search/?term=${encodeURIComponent(row.product_id)}`} 
+                  href={`https://store.steampowered.com/search/?term=${encodeURIComponent(row.title)}`} 
                   target="_blank" 
                   rel="noopener"
                   underline="hover"
                   sx={{ display: 'flex', alignItems: 'center', color: 'white', fontWeight: 500 }}
                 >
-                  {row.product_id} 
+                  {row.title} 
                   <LaunchIcon sx={{ marginLeft: 1, fontSize: 14, opacity: 0.7 }}/>
                 </Link>
               </TableCell>
-              <TableCell align="right" sx={{ color: 'rgba(255,255,255,0.7)' }}>
-                {row.title}
+              {/* Column 2: Displaying the Game ID (product_id) */}
+              <TableCell align="right" sx={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'monospace' }}>
+                {row.product_id}
               </TableCell>
             </TableRow>
           ))}
