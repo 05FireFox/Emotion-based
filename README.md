@@ -1,8 +1,3 @@
-Based on the project code you provided earlier (React + Python/ML) and your resume details, here is a professional, ready-to-use **`README.md`** file for your GitHub repository.
-
-I have highlighted your specific skills (React, Python, ML) mentioned in your resume and accurately described the project architecture based on the files we analyzed.
-
------
 
 # 🎮 Emotion Sense: Game Recommender
 
