@@ -1,0 +1,9 @@
+{
+    "neutral": "Simulation/Strategy",
+    "surprise": "Casual/Family",
+    "fear": "Horror/Action",
+    "sad": "Visual Novel/Adventure",
+    "disgust": "Strategy/Turn-Based",
+    "happy": "Platformer/Puzzle",
+    "angry": "Action/Shooter"
+}

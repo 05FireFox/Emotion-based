@@ -1,0 +1,62 @@
+timestamp,user_id,emotion,recommended_games
+2026-02-24 00:37:38,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-02-24 11:07:39,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-02-24 11:07:57,28373,happy,Shank | Counter-Strike: Condition Zero | Dark Messiah of Might & Magic | Half-Life: Opposing Force
+2026-02-24 11:08:16,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-02-24 11:08:32,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-02-24 11:20:16,28373,happy,Shank | Counter-Strike: Condition Zero | Dark Messiah of Might & Magic | Half-Life: Opposing Force
+2026-02-24 11:32:33,11302889,neutral,To the Moon | Life is Strange - Episode 1 | GRIS | Helltaker | Celeste | BioShock Infinite | LIMBO | There Is No Game: Wrong Dimension
+2026-02-24 11:32:44,11302889,fear,To the Moon | Life is Strange - Episode 1 | GRIS | Helltaker | Celeste | BioShock Infinite | LIMBO | There Is No Game: Wrong Dimension
+2026-02-24 12:40:03,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-02-24 12:41:28,4937941,neutral,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:42:02,4937941,angry,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:42:37,4937941,neutral,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:42:57,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:43:38,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:44:17,4937941,neutral,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:45:20,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:45:33,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:45:51,4937941,fear,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:46:08,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:46:19,4937941,happy,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:46:36,4937941,sad,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 12:46:59,4937941,neutral,BioShock Infinite | Alan Wake | BioShock™ Remastered | Resident Evil 5 | The Evil Within | Portal 2 | Dead Space | Middle-earth™: Shadow of Mordor™
+2026-02-24 14:45:01,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 14:45:16,13987001,sad,"To the Moon | What Remains of Edith Finch | Life is Strange | Journey | Gris | Spiritfarer | Firewatch | That Dragon, Cancer"
+2026-02-24 14:46:01,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 14:46:50,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 14:51:48,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:12:35,13987001,surprise,Outer Wilds | Portal | Subnautica | Cyberpunk 2077 | Control | The Stanley Parable | Inscryption | No Man's Sky
+2026-02-24 15:13:50,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 15:14:07,13987001,sad,"To the Moon | What Remains of Edith Finch | Life is Strange | Journey | Gris | Spiritfarer | Firewatch | That Dragon, Cancer"
+2026-02-24 15:14:44,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 15:15:17,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:15:43,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:15:59,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 15:16:15,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:16:25,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:16:36,13987001,surprise,Outer Wilds | Portal | Subnautica | Cyberpunk 2077 | Control | The Stanley Parable | Inscryption | No Man's Sky
+2026-02-24 15:16:53,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:17:04,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:17:20,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:17:32,13987001,sad,"To the Moon | What Remains of Edith Finch | Life is Strange | Journey | Gris | Spiritfarer | Firewatch | That Dragon, Cancer"
+2026-02-24 15:17:58,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 15:18:25,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:18:40,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:19:10,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:19:17,13987001,happy,Counter-Strike: Condition Zero | Half-Life: Opposing Force | Shank | Dark Messiah of Might & Magic | Stardew Valley | Fall Guys | Slime Rancher | Portal 2
+2026-02-24 15:19:25,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-02-24 15:19:35,13987001,sad,"To the Moon | What Remains of Edith Finch | Life is Strange | Journey | Gris | Spiritfarer | Firewatch | That Dragon, Cancer"
+2026-02-24 15:45:02,13987001,neutral,Half-Life 2 | DOOM | PAYDAY 2 | Unturned | Team Fortress 2 | Portal 2 | Killing Floor 2 | Fallout 4
+2026-03-16 13:44:56,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-03-16 13:45:05,28373,neutral,Galactic Bowling | Train Bandit | Jolt Project | Henosis™ | Two Weeks in Painland | Wartune Reborn | TD Worlds | Legend of Rome - The Wrath of Mars
+2026-03-16 13:45:12,28373,happy,Shank | Counter-Strike: Condition Zero | Dark Messiah of Might & Magic | Half-Life: Opposing Force
+2026-03-20 10:40:29,4528511,neutral,Wolfenstein: The New Order | BioShock Infinite | DOOM | Half-Life 2 | Spec Ops: The Line | Alan Wake | Portal | Mafia II (Classic)
+2026-03-20 10:40:44,4528511,neutral,Wolfenstein: The New Order | BioShock Infinite | DOOM | Half-Life 2 | Spec Ops: The Line | Alan Wake | Portal | Mafia II (Classic)
+2026-03-20 10:40:59,4528511,happy,Counter-Strike: Condition Zero | Shank | Stardew Valley | Fall Guys | Slime Rancher | Portal 2 | Rocket League | A Short Hike
+2026-03-20 10:41:16,4528511,fear,Resident Evil 7 | Outlast | Amnesia: The Dark Descent | Phasmophobia | Alien: Isolation | Dead Space | The Forest | SOMA
+2026-03-20 10:41:33,4528511,surprise,Outer Wilds | Portal | Subnautica | Cyberpunk 2077 | Control | The Stanley Parable | Inscryption | No Man's Sky
+2026-03-20 10:41:47,4528511,happy,Counter-Strike: Condition Zero | Shank | Stardew Valley | Fall Guys | Slime Rancher | Portal 2 | Rocket League | A Short Hike
+2026-03-20 10:42:02,4528511,neutral,Wolfenstein: The New Order | BioShock Infinite | DOOM | Half-Life 2 | Spec Ops: The Line | Alan Wake | Portal | Mafia II (Classic)
+2026-03-20 10:48:46,4528511,happy,Counter-Strike: Condition Zero | Shank | Stardew Valley | Fall Guys | Slime Rancher | Portal 2 | Rocket League | A Short Hike
+2026-03-20 10:50:58,4528511,sad,"To the Moon | What Remains of Edith Finch | Life is Strange | Journey | Gris | Spiritfarer | Firewatch | That Dragon, Cancer"

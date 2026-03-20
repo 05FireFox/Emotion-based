@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sentiment-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sentiment-frontend
+  template:
+    metadata:
+      labels:
+        app: sentiment-frontend
+    spec:
+      containers:
+      - name: sentiment-frontend-app
+        # Replace $LOCATION with your Artifact Registry location (e.g., us-west1).
+        # Replace $GCLOUD_PROJECT with your project ID.
+        image: us-west1-docker.pkg.dev/project-756-todo/sentiment-repo/sentiment-frontend:latest
+        # This app listens on port 8080 for web traffic by default.
+        ports:
+        - containerPort: 8080
+        env:
+          - name: PORT
+            value: "8080"
