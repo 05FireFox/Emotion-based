@@ -9,11 +9,13 @@ from datetime import datetime
 from recommendations import get_recommendations, get_valid_matrix_id
 
 app = Flask(__name__)
+# Enable CORS for frontend communication
 CORS(app)
 
 # =========================================
 # DATABASE SETUP (Creates CSV files if missing)
 # =========================================
+# WARNING: On Render's Free Tier, these files will be wiped on every restart.
 USERS_FILE = 'users_data.csv'
 HISTORY_FILE = 'recommendation_history.csv'
 
@@ -171,4 +173,5 @@ def get_game_recommendation(steam_id):
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8082))
     print(f"Starting server on port {port}...")
-    app.run(debug=True, host="0.0.0.0", port=port)
+    # Changed to debug=False for production
+    app.run(debug=False, host="0.0.0.0", port=port)
