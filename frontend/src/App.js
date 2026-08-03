@@ -66,8 +66,16 @@ const lightTheme = createTheme({
 });
 
 function App() {
-  const [currentView, setCurrentView] = useState('landing'); 
-  const [currentUser, setCurrentUser] = useState(null); // stores the full user object now
+  // Directly set the starting view to 'main' instead of 'landing'
+  const [currentView, setCurrentView] = useState('main'); 
+  
+  // Provide a default guest profile so Main.js loads without crashing
+  const [currentUser, setCurrentUser] = useState({
+    user_id: "guest_user_123",
+    name: "Guest",
+    email: "guest@emotionsense.com",
+    phone: "0000000000"
+  });
 
   const handleAuthSuccess = (userData) => {
     setCurrentUser(userData);
@@ -76,7 +84,7 @@ function App() {
 
   const handleLogout = () => {
     setCurrentUser(null);
-    setCurrentView('login'); // Takes them back to login screen
+    setCurrentView('login'); // Takes them back to login screen if they click logout
   };
 
   return (
@@ -115,7 +123,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {/* Pass the full currentUser object and logout function to Main */}
+            {/* Pass the guest/current user object and logout function to Main */}
             <Main currentUser={currentUser} onLogout={handleLogout} />
           </motion.div>
         )}
