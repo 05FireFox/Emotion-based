@@ -12,79 +12,35 @@ import { AnimatePresence, motion } from 'framer-motion';
 const lightTheme = createTheme({
   palette: {
     mode: 'light',
-    primary: {
-      main: '#2D2D2D',
-    },
-    secondary: {
-      main: '#007BFF',
-    },
-    background: {
-      default: '#F9F9F9',
-      paper: '#ffffff',
-    },
-    text: {
-      primary: '#2D2D2D',
-      secondary: 'rgba(45, 45, 45, 0.7)',
-    },
+    primary: { main: '#2D2D2D' },
+    secondary: { main: '#007BFF' },
+    background: { default: '#F9F9F9', paper: '#ffffff' },
+    text: { primary: '#2D2D2D', secondary: 'rgba(45, 45, 45, 0.7)' },
   },
-  typography: {
-    fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
-  },
-  components: {
-    MuiOutlinedInput: {
-      styleOverrides: {
-        root: {
-          '& .MuiOutlinedInput-notchedOutline': {
-            borderColor: 'rgba(45, 45, 45, 0.3)',
-          },
-          '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#2D2D2D',
-          },
-          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#2D2D2D',
-          },
-          color: '#2D2D2D',
-        },
-      },
-    },
-    MuiInputLabel: {
-      styleOverrides: {
-        root: {
-          color: 'rgba(45, 45, 45, 0.7)',
-          '&.Mui-focused': {
-            color: '#2D2D2D',
-          },
-        },
-      },
-    },
-    MuiSelect: {
-      styleOverrides: {
-        icon: { color: '#2D2D2D' },
-      }
-    },
-  },
+  typography: { fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif' },
 });
 
 function App() {
-  // Directly set the starting view to 'main' instead of 'landing'
+  // Start directly on the 'main' view without asking for credentials
   const [currentView, setCurrentView] = useState('main'); 
   
-  // Provide a default guest profile so Main.js loads without crashing
+  // Automatically provide a default user profile so no credentials are needed
   const [currentUser, setCurrentUser] = useState({
-    user_id: "guest_user_123",
-    name: "Guest",
+    user_id: "guest_user",
+    name: "Guest User",
     email: "guest@emotionsense.com",
     phone: "0000000000"
   });
 
-  const handleAuthSuccess = (userData) => {
-    setCurrentUser(userData);
-    setCurrentView('main');
-  };
-
+  // If someone clicks logout, this brings them back to a clean guest state instead of a login form
   const handleLogout = () => {
-    setCurrentUser(null);
-    setCurrentView('login'); // Takes them back to login screen if they click logout
+    setCurrentUser({
+      user_id: "guest_user",
+      name: "Guest User",
+      email: "guest@emotionsense.com",
+      phone: "0000000000"
+    });
+    setCurrentView('main');
   };
 
   return (
@@ -92,30 +48,7 @@ function App() {
       <CssBaseline />
       <AnimatePresence mode="wait">
         
-        {/* 1. Landing Page */}
-        {currentView === 'landing' && (
-          <LandingPage key="landing" onEnter={() => setCurrentView('login')} />
-        )}
-
-        {/* 2. Login Page */}
-        {currentView === 'login' && (
-          <Login 
-            key="login" 
-            onLoginSuccess={handleAuthSuccess} 
-            switchToRegister={() => setCurrentView('register')} 
-          />
-        )}
-
-        {/* 3. Register Page */}
-        {currentView === 'register' && (
-          <Register 
-            key="register" 
-            onRegisterSuccess={handleAuthSuccess} 
-            switchToLogin={() => setCurrentView('login')} 
-          />
-        )}
-
-        {/* 4. Main App (Camera & Recommendations) */}
+        {/* Main App (Camera & Recommendations) loads instantly */}
         {currentView === 'main' && (
           <motion.div
             key="main"
@@ -123,7 +56,6 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {/* Pass the guest/current user object and logout function to Main */}
             <Main currentUser={currentUser} onLogout={handleLogout} />
           </motion.div>
         )}
