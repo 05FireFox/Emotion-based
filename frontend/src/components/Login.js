@@ -20,7 +20,8 @@ function Login({ onLoginSuccess, switchToRegister }) {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8082/login', {
+      // ✅ CHANGED: Now uses the environment variable
+      const response = await fetch(`${process.env.REACT_APP_FILTERING_API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ identifier, password })
