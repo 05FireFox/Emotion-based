@@ -51,8 +51,8 @@ function Main({ currentUser, onLogout }) {
   const get_recommendations = () => {
     setLoading(true);
     
-    // USING PROXY PATH to avoid CORS
-    const url = `/recommend/${isUser ? "user" : "game"}/${input}`;
+    // ✅ CHANGED: Removed the proxy path and added the full Environment Variable URL
+    const url = `${process.env.REACT_APP_FILTERING_API_URL}/recommend/${isUser ? "user" : "game"}/${input}`;
 
     axios.post(url, {
       image: photo
@@ -80,7 +80,8 @@ function Main({ currentUser, onLogout }) {
 
       // 3. NEW FEATURE: LOG TO EXCEL/CSV HISTORY
       if (response.data.games && response.data.games.length > 0) {
-        fetch('http://localhost:8082/save_history', {
+        // ✅ CHANGED: Replaced localhost with the Environment Variable
+        fetch(`${process.env.REACT_APP_FILTERING_API_URL}/save_history`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
