@@ -2,6 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 import os
 import base64
+import uuid  # Added to generate unique filenames
 from deepface import DeepFace
 
 app = Flask(__name__)
@@ -19,14 +20,17 @@ def get_polarity():
     # Extract the base64 part
     image_bytes = bytes(image_string.split(',')[1], 'UTF-8')
     
+    # Create a unique filename for this specific request
+    unique_filename = f"temp_face_{uuid.uuid4().hex}.png"
+    
     # Save the image temporarily
-    with open("imageToSave.png", "wb") as fh:
+    with open(unique_filename, "wb") as fh:
         fh.write(base64.decodebytes(image_bytes))
     
     try:
         # enforce_detection=True will cause a ValueError if the face is blurry, unstable, or missing
         face_analysis = DeepFace.analyze(
-            img_path = "imageToSave.png", 
+            img_path = unique_filename, 
             actions = ['emotion'],
             enforce_detection = True 
         )
@@ -43,7 +47,12 @@ def get_polarity():
     except Exception as e:
         # Catch any other unexpected errors
         return {'emotion': 'undetected', 'message': str(e)}
+        
+    finally:
+        # ALWAYS clean up the temporary file, even if DeepFace crashes
+        if os.path.exists(unique_filename):
+            os.remove(unique_filename)
 
 if __name__ == '__main__':
-    # Run on port 8080 (Docker default)
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+    # Run on port assigned by Render, turn debug OFF for production
+    app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
