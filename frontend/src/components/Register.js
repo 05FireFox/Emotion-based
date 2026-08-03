@@ -44,7 +44,8 @@ function Register({ onRegisterSuccess, switchToLogin }) {
     setLoading(true);
     
     try {
-      await fetch('http://localhost:8082/send_otp', {
+      // ✅ CHANGED: Now uses the environment variable
+      await fetch(`${process.env.REACT_APP_FILTERING_API_URL}/send_otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email: formData.email })
@@ -63,7 +64,8 @@ function Register({ onRegisterSuccess, switchToLogin }) {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8082/register', {
+      // ✅ CHANGED: Now uses the environment variable
+      const response = await fetch(`${process.env.REACT_APP_FILTERING_API_URL}/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
